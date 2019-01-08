@@ -13,6 +13,11 @@ public class Pruebas {
 		Examen exm1 = new Examen();
 		Examen exm2 = new Examen();
 		
+		// 2.2 añadir los dos objetos anteriores a un array de esa clase, de 5 elementos de tamaño.
+		Examen[] exmArray = new Examen[5];
+		exmArray[0] = exm1;
+		exmArray[1] = exm2;
+
 		
 	}
 }
