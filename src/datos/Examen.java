@@ -65,4 +65,19 @@ public class Examen {
 	private int[][] notasAlumnos = { { 5, 6, 3, 9, 8 }, { 7, 2, 8, 4, 5 }, { 8, 5, 6, 2, 4 } };
 	private String[] alumnos = { "Pepe", "Manuel", "Carlos" };
 	private String[] modulos = { "PRO", "SSF", "LND", "LNT", "FOL" };
+	
+	/*5. A partir de la propiedad notasAlumnos, clase Examen, se pide:
+	 * Un listado con la nota media de cada alumno. Debe salir el nombre  de cada alumno con su nota media
+	 */
+	
+	public void listadoNotaMedia() {
+		int acumulador = 0;
+		for(int i=0; i<notasAlumnos.length; i++) {
+			for(int j=0; j<notasAlumnos[i].length; j++) {
+				acumulador += notasAlumnos[i][j];
+			}
+			System.out.println(alumnos[i] + ": " + acumulador + " de Nota Media.");
+		}
+	}
+	
 }

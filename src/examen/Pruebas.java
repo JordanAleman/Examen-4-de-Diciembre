@@ -29,6 +29,7 @@ public class Pruebas {
 	}
 	
 
+
 	public static void main(String[] args) {
 		// Hacer las llamadas a los métodos AQUI.
 		// (no olvidar recoger los valores devueltos
@@ -50,6 +51,9 @@ public class Pruebas {
 		for(Examen e: objetivo4) {
 			System.out.println(e.getObj1() + " " + e.getObj2() + " " + e.getObj3() + " " + e.isObj4());
 		}
+		
+		// Objetivo 5
+		new Examen().listadoNotaMedia();
 		
 	}
 }
