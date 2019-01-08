@@ -70,9 +70,10 @@ public class Examen {
 	 * Un listado con la nota media de cada alumno. Debe salir el nombre  de cada alumno con su nota media
 	 */
 	
-	public void listadoNotaMedia() {
-		int acumulador = 0;
+	public void listadoNotaMediaAlumnos() {
+		int acumulador;
 		for(int i=0; i<notasAlumnos.length; i++) {
+			acumulador = 0;
 			for(int j=0; j<notasAlumnos[i].length; j++) {
 				acumulador += notasAlumnos[i][j];
 			}
@@ -80,4 +81,18 @@ public class Examen {
 		}
 	}
 	
+	/*6. A partir de la propiedad notasAlumnos, clase Examen, se pide:
+	 * Un listado con la nota media por cada módulo. Debe salir el nombre de cada módulo y su nota media.
+	 */
+	
+	public void listadoNotaMediaModulo() {
+		int acumulador;
+		for(int j=0; j<notasAlumnos[0].length; j++) {
+			acumulador = 0;
+			for(int i=0; i<notasAlumnos.length; i++) {
+				acumulador += notasAlumnos[i][j];
+			}
+			System.out.println(modulos[j] + ": " + acumulador + " de Nota Media.");
+		}
+	}
 }

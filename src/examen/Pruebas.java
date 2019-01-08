@@ -53,7 +53,10 @@ public class Pruebas {
 		}
 		
 		// Objetivo 5
-		new Examen().listadoNotaMedia();
+		new Examen().listadoNotaMediaAlumnos();
+		
+		// Objetivo 6
+		new Examen().listadoNotaMediaModulo();
 		
 	}
 }
