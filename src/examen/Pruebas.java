@@ -16,8 +16,19 @@ public class Pruebas {
 		return a;
 	}
 	
+	// 4. Crea un método que devuelva un array de n objetos de  la clase Examen, creada en el objetivo 1.
+	public Examen[] creaObjetosExamen (int n) {
+		int contador = 0;
+		Examen[] exmArray = new Examen[n];
+		
+		while(contador < n) {
+			exmArray[contador] = new Examen();
+			contador++;
+		}
+		return exmArray;
+	}
+	
 
-	// Desarrolllar los métodos del examen AQUI (ver Objetivos)
 	public static void main(String[] args) {
 		// Hacer las llamadas a los métodos AQUI.
 		// (no olvidar recoger los valores devueltos
@@ -33,6 +44,12 @@ public class Pruebas {
 		
 		// Objetivo 3
 		System.out.println(new Pruebas().productoDosNumeros(3, 4));
+		
+		// Objetivo 4
+		Examen[] objetivo4 = new Pruebas().creaObjetosExamen(4);
+		for(Examen e: objetivo4) {
+			System.out.println(e.getObj1() + " " + e.getObj2() + " " + e.getObj3() + " " + e.isObj4());
+		}
 		
 	}
 }
